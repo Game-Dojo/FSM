@@ -6,9 +6,10 @@ namespace Garden.Beet
     {
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            var controller = animator.GetComponentInParent<BeetController>();
-            if (!controller) return;
-            controller.SetPlantState(BeetController.PlantState.Medium);
+            if (animator.TryGetComponent<BeetController>(out BeetController controller))
+            {
+                controller.SetPlantState(BeetController.PlantState.Medium);
+            }
         }
     }
 }

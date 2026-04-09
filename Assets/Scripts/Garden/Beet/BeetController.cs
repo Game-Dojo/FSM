@@ -13,8 +13,10 @@ namespace Garden.Beet
             Full
         }
         
-        private Animator _animator;
         [SerializeField] private PlantState plantState = PlantState.Root;
+        
+        private Animator _animator;
+        
         private void Awake()
         {
             _animator = GetComponent<Animator>();

@@ -175,7 +175,7 @@ AnimatorState:
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
-  m_TimeParameter: StateTime
+  m_TimeParameter: MyTime
 --- !u!1101 &4853288686124005652
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -242,10 +242,10 @@ AnimatorStateMachine:
     m_Position: {x: 30, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5664258399179016045}
-    m_Position: {x: 260, y: 250, z: 0}
+    m_Position: {x: 30, y: 320, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4889188161248304455}
-    m_Position: {x: 490, y: 250, z: 0}
+    m_Position: {x: 30, y: 390, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
