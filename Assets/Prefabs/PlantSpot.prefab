@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2600750661269038357}
   - component: {fileID: 9100107131605185403}
   - component: {fileID: 6636778677468197008}
-  m_Layer: 0
+  - component: {fileID: 602137910591799248}
+  m_Layer: 6
   m_Name: PlantSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &602137910591799248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400747324116538736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d6c396124b7d44eb03b38bdfe4ce16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Pot
