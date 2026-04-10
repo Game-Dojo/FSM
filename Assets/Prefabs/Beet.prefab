@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9078932452359653771}
   - component: {fileID: 7375548985588827255}
   - component: {fileID: 5151835838307609197}
+  - component: {fileID: 920041686119619903}
   m_Layer: 6
   m_Name: Beet
   m_TagString: Untagged
@@ -80,6 +81,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0.25, z: 0}
+--- !u!114 &920041686119619903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4287947831217572421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a22b03e67104048a1334309e1e80508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Garden.Beet.BeetController
+  plantState: 0
 --- !u!1001 &4048005182445109862
 PrefabInstance:
   m_ObjectHideFlags: 0

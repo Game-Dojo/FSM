@@ -43,5 +43,15 @@ namespace Garden.Beet
             yield return new WaitForEndOfFrame();
             transform.GetChild(plantIndex).gameObject.SetActive(true);
         }
+
+        public bool CanHarvest()
+        {
+            return plantState == PlantState.Full;
+        }
+
+        public void Harvest()
+        {
+            Destroy(gameObject);
+        }
     }
 }
