@@ -1,57 +1,15 @@
-using System.Collections;
-using UnityEngine;
+using Garden.Base;
 
 namespace Garden.Beet
 {
-    public class BeetController : MonoBehaviour
+    public class BeetController : PlantBase
     {
-        public enum PlantState
+        public override void Harvest()
         {
-            Root,
-            Small,
-            Medium,
-            Full
-        }
-        
-        [SerializeField] private PlantState plantState = PlantState.Root;
-        
-        private Animator _animator;
-        
-        private void Awake()
-        {
-            _animator = GetComponent<Animator>();
+            base.Harvest();
+            print("Beet Harvested!");
         }
 
-        private void Start()
-        {
-            SetPlantState(PlantState.Root);
-        }
-
-        public void SetPlantState(PlantState state)
-        {
-            plantState = state;
-            foreach (Transform p in transform)
-            {
-                p.gameObject.SetActive(false);
-            }
-
-            StartCoroutine(nameof(ChangeState), (int)state);
-        }
-
-        private IEnumerator ChangeState(int plantIndex)
-        {
-            yield return new WaitForEndOfFrame();
-            transform.GetChild(plantIndex).gameObject.SetActive(true);
-        }
-
-        public bool CanHarvest()
-        {
-            return plantState == PlantState.Full;
-        }
-
-        public void Harvest()
-        {
-            Destroy(gameObject);
-        }
+        public override bool CanHarvest() => GetPlantState() == PlantState.Full;
     }
 }
