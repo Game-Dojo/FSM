@@ -418,11 +418,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51be09206dcc4e9299a716ad73b4a488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Managers.GridManager
-  logicGrid: {fileID: 516119859}
-  cubeIndicator: {fileID: 2112764253}
-  gridRange: 15
-  gridColor: {r: 0.9033634, g: 1, b: 0.24056602, a: 1}
   orientation: 0
+  logicGrid: {fileID: 516119859}
+  plantsParent: {fileID: 1218303}
+  gridRange: 15
+  gridColor: {r: 0.23921567, g: 1, b: 0.87931466, a: 1}
+  beet: {fileID: 920041686119619903, guid: d6cf78af30ca00544996de88a0b49299, type: 3}
   mouseAction: {fileID: -3790812208629054863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   plantLayerMask:
     serializedVersion: 2
