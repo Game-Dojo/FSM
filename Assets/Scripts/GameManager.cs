@@ -1,5 +1,4 @@
 using Garden.Base;
-using Garden.Beet;
 using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -74,4 +73,5 @@ public class GameManager : MonoBehaviour
         if (!point) return;
         point.SetScore(points);
     }
+    
 }

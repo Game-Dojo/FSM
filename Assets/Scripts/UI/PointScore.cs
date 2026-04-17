@@ -7,6 +7,7 @@ namespace UI
     {
         private TMP_Text _scoreText;
         private Camera _mainCamera;
+        private float _originalYPosition;
 
         private void Awake()
         {
